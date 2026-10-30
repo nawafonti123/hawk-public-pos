@@ -1,9 +1,11 @@
-# HAWK POS updates
+# HAWK POS — تحديثات ويندوز
 
-Official signed Windows installers and update manifests for HAWK POS.
+[تحميل النسخة التجريبية 0.3.0](https://github.com/nawafonti123/hawk-public-pos/releases/latest) · [موقع النظام](https://pos.hwks.cloud)
 
-Application source is maintained in a separate private repository. Store databases, customer information, credentials and publisher private keys are never stored here.
+نظام نقاط بيع ومحاسبة يعمل بقاعدة بيانات محلية على جهاز كل متجر. هذا المستودع لملفات التثبيت والتحديث الموقّعة فقط؛ كود النظام محفوظ في مستودع خاص. بيانات المتاجر وكلمات المرور والنسخ الاحتياطية ومفتاح التوقيع الخاص لا تُرفع هنا.
 
-The initial local-store build is a preview. Each release describes its verified scope and remaining requirements. The application's update signature is separate from Windows Authenticode signing.
+التجربة الحالية مخصصة لـ Windows x64، وتتطلب صلاحية مسؤول عند التثبيت ومسار حساب ويندوز بحروف لاتينية. يتضمن المثبّت .NET وPostgreSQL ومتطلبات Microsoft للتثبيت دون تنزيلها من الإنترنت. أنشئ حساب مالك المتجر عند التشغيل الأول؛ لا توجد كلمة مرور افتراضية.
 
-Project address: https://pos.hwks.cloud
+يتحقق التطبيق من توقيع الناشر ورقم الإصدار قبل التحديث. يطبّق المالك التحديث بعد إقفال الصناديق، وتبقى بياناته خارج مجلد البرنامج. توقيع التحديث منفصل عن شهادة Windows Authenticode، التي لم تُجهّز بعد.
+
+**نسخة تجريبية:** جرى التحقق من تشغيل محلي وبيع بالعربية دون اتصال وإعادة تشغيل مع نفس الفاتورة والميزان على جهاز التطوير. اختبارات الجهاز النظيف والترقية بين إصدارين وقطع الكهرباء والأجهزة الطرفية ومسارات ويندوز غير اللاتينية ما زالت مطلوبة. لوحة حالة التشغيل لم تُستضف فعليًا بعد. هذه النسخة لا تعني اكتمال جميع المواصفات أو اعتمادها للبيع التجاري.
